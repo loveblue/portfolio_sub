@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+#section1{
+    position: relative;
+    background: #0f0f0f;
+}
+
+#section1 div{
+    height: 100%;
+}
+
+#section1 .title{
+    color: #fff;
+    position: absolute;
+    left: 14%;
+    top: 30%;
+    z-index: 5;
+}
+#section1 .title h2{
+    font-family: 'Krona One', sans-serif;
+    font-size: 4.5rem;
+    white-space: normal;
+    text-align: left;
+}
+#section1 .title h2 span{
+    font-size: 3rem;
+}
+#section1 .title div{
+    margin-top: 74px;
+}
+#section1 .title p{
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.6rem;
+}
+
+
+
+
+/*스킬페이지*/
+#section2{
+    background: #0f0f0f;
+    position: relative;
+}
+#section2 h3{
+    color: rgba(204, 162, 108, 0.2);
+    font-family: 'NotoSansCJK KR';
+    font-weight: 900;
+    font-size: 10rem;
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+#section2 .container{
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+    margin-left: 23%;
+}
+#section2 .card{
+    float: left;
+    margin: 2% 10%;
+}
+#section2 .box .percent{
+    position: relative;
+}
+#section2 .number, .text{
+    font-family: 'NotoSansCJK KR';
+    font-weight: 700;
+    color: rgba(204, 162, 108);
+}
+#section2 .number{
+    color: rgba(204, 162, 108, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+#section2 .card:hover .number h4{
+    color: rgba(204, 162, 108);
+    font-size: 1.25rem;
+    transition: 0.5s;
+}
+
+#section2 .text{
+    font-weight: 700;
+    font-size: 1.75rem;
+    margin-top: 8%;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 10;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: rgba(204, 162, 108, 0.2);
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+    animation-name: progress;
+    transform-origin: 50% 47%;
+    transform: rotate(-90deg)
+}
+svg circle:nth-child(2){
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90)/100);
+    stroke: rgba(204, 162, 108);
+}
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90)/100);
+    stroke: rgba(204, 162, 108);
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
+    stroke: rgba(204, 162, 108);
+}
+.card:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
+    stroke: rgba(204, 162, 108);
+}
+.card:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 70)/100);
+    stroke: rgba(204, 162, 108);
+}
+.card:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 50)/100);
+    stroke: rgba(204, 162, 108);
+}
+@keyframes progress {
+  to {
+    stroke-dasharray: 110;
+  }
+}
+
+/*소개페이지*/
+#section3{
+    background: #0f0f0f;
+}
+#section3 h3{
+    width: 82%;
+    color: rgba(204, 162, 108, 0.2);
+    font-family: 'NotoSans';
+    font-weight: 900;
+    font-size: 7rem;
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 10%;
+}
+#section3 .pfImg{
+    position: absolute;
+    left: 12%;
+    top: 35%;
+}
+#section3 .pfText{
+    color: #fff;
+    text-align: left;
+    position: absolute;
+    left: 40%;
+    top: 45%;
+}
+#section3 .pfText h4{
+    font-family: 'Noto Sans CJK KR';
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    margin-bottom: 7%;
+}
+#section3 .pfText h4 span{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+#section3 .pfText p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 7%;
+}
+#section3 .pfText li{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/*컨텍페이지*/
+#section4{
+    background: #0f0f0f;
+    position: relative;
+}
+#section4 h3{
+    color: rgba(204, 162, 108, 0.2);
+    font-family: 'NotoSansCJK KR';
+    font-weight: 900;
+    font-size: 10rem;
+    position: absolute;
+    left: 0;
+    top: 8%;
+}
+#section4 .fInfo{
+    color: rgba(204, 162, 108);
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+#section4 .fInfo p{
+    line-height: 4.25rem;
+    font-family: 'NotoSans';
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+#section4 .fInfo img{
+    vertical-align: text-bottom;
+}
+#section4 .copy{
+    color: rgba(204, 162, 108);
+    font-size: 1.25rem;
+    position: absolute;
+    bottom: 5%;;
+    left: 35%;
+}
+#section4 .fLogo{
+    position: absolute;
+    bottom: 20%;
+    right: 20%;
+}
+
