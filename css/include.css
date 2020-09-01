@@ -2,15 +2,12 @@
 
 #header{
     width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 20;
 }
 
 #header h1{
     width: 64px;
     height: 41px;
-    background: url(../images/common/logo_header.png) no-repeat center center;
+    background: url(../../images/common/logo_header.png) no-repeat center center;
     text-indent: -9999px;
     float: left;
     padding: 40px 50px;
@@ -32,4 +29,8 @@
 .gnb li a{
     font-weight: 700;
     color: #fff
+}
+
+body{
+    background: #0f0f0f;
 }
